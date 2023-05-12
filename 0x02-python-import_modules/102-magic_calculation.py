@@ -2,7 +2,7 @@
 
 def magic_calculation(a, b):
     """Python bytecode for Magic Calculator provided by alx."""
-    from magic_calculation import add, sub
+    from magic_calculation_102 import add, sub
 
     if a < b:
         c = add(a, b)
