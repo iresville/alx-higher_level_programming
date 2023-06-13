@@ -1,15 +1,15 @@
 #!/usr/bin/python3
-""" Define a class MyList"""
+"""
+contains the MyList class
+"""
 
 
-class myList(list):
-    """A subclass list that provides additional functionality for\
-        printing the elements of the list in sorted order ."""
-        
-        
+class MyList(list):
+    """a subclass of list"""
+    def __init__(self):
+        """initializes the object"""
+        super().__init__()
+
     def print_sorted(self):
-        """ Prints the element of the list in sorted (ascending) order"""
-       
-        sorted_list = sorted(self)
-        print(sorted_list)
-    
+        """prints the sorted list"""
+        print(sorted(self))
