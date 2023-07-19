@@ -1,4 +1,5 @@
--- list number by score
--- the number of records for this score with the label number
--- The list should be sorted by the number of records (descending)
-SELECT score COUNT(*) AS NUMBER FROM second_table GROUP BY score ORDER BY score DESC;
+--  LIST NUMBER OF RECORDS WITH THE SAME SCORE
+-- RESULTS SHOULD DISPLAY SCORE
+-- LABEL NUMBER OF RECORDS FOR THIS `SCORE` WITH `NUMBER`
+-- SHOULD BE SORTED OUT IN DESC ORDER
+SELECT score, COUNT(*) as number FROM second_table GROUP BY score ORDER BY score DESC;
